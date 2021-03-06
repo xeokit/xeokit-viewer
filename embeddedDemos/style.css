@@ -1,0 +1,256 @@
+.logo {
+  height: 60px;
+  border-radius: 10px;
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+p.headline {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  float: right;
+  color: #1d55a0;
+  margin-top: 10px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.sensor {
+  width: 70px;
+  border-radius: 20px;
+  position: fixed;
+  left: 1200px;
+  top: 825px;
+}
+
+html,
+body {
+  height: 100%;
+  background: #f2f2f2f2;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+iframe {
+  width: 80%;
+  border: 0px;
+  height: 95vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/images/desktopview.jpg);
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+}
+
+nav p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1d55a0;
+  font-size: 24px;
+  line-height: 55px;
+  float: left;
+  padding: 0px 20px;
+}
+nav ul {
+  height: inherit;
+  list-style: none;
+  border-bottom: #1d55a0;
+  border-width: 1px;
+}
+
+nav ul li {
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1d55a0;
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 15px;
+  padding-bottom: 0,75em 5px;
+  padding-right: 0px;
+  padding-top: 33px;
+  text-decoration: none;
+}
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 7px;
+}
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 100px;
+}
+nav ul li ul li a {
+  padding: 8px 7px;
+  font-size: 16px;
+}
+
+nav ul li ul li a:hover {
+  background-color: #e8e9e7;
+}
+
+nav div {
+  height: 10px;
+  width: 100%;
+  color: #1d55a0;
+}
+
+/* Popup modal*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.header .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+/* Popup modal*/
+
+/* White info window*/
+
+.main {
+  vertical-align: top;
+  height: 100vh;
+}
+
+.sidebar {
+  border: #1d55a0;
+  border-width: 5px;
+  position: absolute;
+  float:right;
+  vertical-align: top;
+  margin-top: 70px;
+  height: 95vh;
+  width: 20%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 40px;
+  padding-left: 10px;
+  background-color: white;
+}
+
+.sidebar .information_content {
+  background: white ; 
+  color: #1d55a0;
+  height: 560px;
+  overflow:auto ; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+.sidebar .information_content p {
+  width: 95%;
+  border: 2px;
+  border-color: #1d55a0;
+  background-color: #a3caeb;
+  padding: 4px;
+
+}
+
+.sidebar .clear_button {
+  position: absolute;
+  background-color: #1d55a0;
+  border: 0px;
+  width: 93%;
+  height: 50px;
+  bottom: 45px;
+  color: white;
+  font-size: 20px;
+}
+/*White info window*/
